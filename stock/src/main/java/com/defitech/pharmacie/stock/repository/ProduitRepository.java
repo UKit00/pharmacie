@@ -1,4 +1,4 @@
-package com.defitech.pharmacie.core.repository;
+package com.defitech.pharmacie.stock.repository;
 
 import com.defitech.pharmacie.core.entity.Produit;
 import org.springframework.data.jpa.repository.JpaRepository;

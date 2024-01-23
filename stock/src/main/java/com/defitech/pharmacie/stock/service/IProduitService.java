@@ -1,4 +1,4 @@
-package com.defitech.pharmacie.core.service;
+package com.defitech.pharmacie.stock.service;
 
 import com.defitech.pharmacie.core.entity.Produit;
 

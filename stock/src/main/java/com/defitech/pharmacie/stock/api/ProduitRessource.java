@@ -1,7 +1,7 @@
-package com.defitech.pharmacie.core.api;
+package com.defitech.pharmacie.stock.api;
 
-import com.defitech.pharmacie.core.service.ProduitService;
 import com.defitech.pharmacie.core.entity.Produit;
+import com.defitech.pharmacie.stock.service.ProduitService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

@@ -1,8 +1,7 @@
-package com.defitech.pharmacie.core.service;
+package com.defitech.pharmacie.stock.service;
 
 import com.defitech.pharmacie.core.entity.Produit;
-import com.defitech.pharmacie.core.repository.ProduitRepository;
-import com.defitech.pharmacie.core.service.IProduitService;
+import com.defitech.pharmacie.stock.repository.ProduitRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
