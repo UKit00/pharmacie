@@ -1,6 +1,5 @@
 package com.defitech.pharmacie.core.entity;
 
-import com.defitech.pharmacie.core.entity.Facture;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.Data;

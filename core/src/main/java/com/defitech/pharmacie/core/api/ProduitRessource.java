@@ -1,7 +1,7 @@
 package com.defitech.pharmacie.core.api;
 
-import com.defitech.pharmacie.core.entity.Produit;
 import com.defitech.pharmacie.core.service.ProduitService;
+import com.defitech.pharmacie.core.entity.Produit;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -10,7 +10,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/stock")
 public class ProduitRessource {
-    
+
     @Autowired
     ProduitService produitService;
 
@@ -38,5 +38,5 @@ public class ProduitRessource {
     public Produit modifier(@RequestBody Produit p){
         return produitService.modifier(p);
     }
-    
+
 }
