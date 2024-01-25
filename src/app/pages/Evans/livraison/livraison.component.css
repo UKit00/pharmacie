@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz@8..144&display=swap');
+.container {
+  display: flex;
+  justify-content: center; /* Centre horizontalement dans le conteneur */
+  align-items: center; /* Centre verticalement dans le conteneur */
+  height: 100vh; /* Hauteur totale de la fenêtre de visualisation */
+  
+  
+}
+/* Styles pour le conteneur du formulaire */
+.box {
+  width: 367px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(211, 191, 191, 0.1);
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  margin: 20px;
+  
+  
+}
+
+/* Styles pour le titre */
+.text-wrapper {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  text-align:center;
+}
+
+/* Styles pour les groupes de formulaire */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.form-group .country{
+  background-color: rgba(217, 217, 217, 0.6);
+}
+
+/* Styles pour les champs de saisie et les listes déroulantes */
+.form-group input[type="text"],
+.form-group input[type="tel"],
+.form-group input[type="email"],
+.form-group select  {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #faf6f6;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: rgba(217, 217, 217, 0.6);
+}
+
+/* Styles pour les listes déroulantes */
+.form-group select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #D9D9D9;
+}
+
+/* Styles pour les boutons de navigation */
+.container .form-navigation {
+  display: flex;
+  justify-content: space-between; /* Répartit les espaces entre les éléments */
+}
+
+.container .form-navigation .button-back{
+  /* Vos styles de bouton existants ici */
+  background-color: #007bff; 
+  color: white;
+  border: none;
+  padding: 12px 0 0 20px;
+  margin-left: 5px;
+  font-size: 13px;
+  font-family: 'Roboto Serif', serif;
+  width: 100px;
+  display: flex;
+  height: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.container .form-navigation .button-confirm {
+  /* Vos styles de bouton existants ici */
+  background-color: #FBB03B; 
+  color: white;
+  border: none;
+  padding: 0 2px 0 0;
+  margin-left: 5px;
+  font-size: 13px;
+  font-family: 'Roboto Serif', serif;
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.container .form-navigation .button-confirm i{
+  margin-left: 82px;
+  font-size: 18px;
+  margin-top: -18px;
+  display: flex;
+  
+}
+
+.container .form-navigation .button-back i{
+  margin-left: -20px;
+  margin-top: -1px;
+  font-size: 18px;
+  display: flex;
+}
+
+.container .form-navigation .button-back:hover {
+  background-color: #0056b3;
+}
+
+.container .form-navigation .button-confirm {
+  background-color: rgba(251, 176, 59, 1);
+}
+
+.container .form-navigation .button-confirm:hover {
+  background-color: rgb(160, 102, 8);
+}
+
+/* Ajustement pour les petits écrans si nécessaire */
+@media (max-width: 400px) {
+  .box {
+    width: auto;
+    margin: 10px;
+  }
+}

@@ -1,0 +1,63 @@
+
+#header p {
+  text-align: right;
+  margin: 15px;
+}
+#header {
+background-color: #35189e;
+height: 65px;
+  display: flex;
+  align-items: center; /* Aligne les éléments verticalement au centre */
+}
+
+#header img {
+  margin-right: 100px; /* Espace entre l'image et le paragraphe (ajustez selon vos besoins) */
+}
+
+.accordion accordion-flush{
+margin-top: 10px;
+}
+.bt{
+background-color: #13034b;
+color: #fff;
+}
+
+.element{
+  height: 580px;
+  background-color: #13034b;
+  }
+
+
+  .element .accordion-button {
+    background-color: #13034b;
+    color: #fff; /* Changer la couleur du texte en blanc ou une couleur lisible */
+  }
+
+  .element .accordion-button:hover {
+    background-color: #35189e; /* Changer la couleur au survol si nécessaire */
+  }
+
+  .element .accordion-item {
+    background-color:#13034b; /* Changer la couleur de fond de l'accordéon */
+  }
+
+  .element .accordion-item h2 {
+    margin-bottom: 0;
+    color: white;
+
+  }
+  .element .d-grid {
+    background-color: #13034b; /* Couleur de fond blanche */
+    padding: 10px; /* Ajoutez du rembourrage pour un meilleur aspect */
+    border-radius: 5px; /* Ajoutez une bordure arrondie si nécessaire */
+  }
+
+
+  .element .d-grid button {
+   color: white; /* Couleur de fond au survol si nécessaire */
+  }
+
+  button:focus
+  {
+  background-color: black
+  }

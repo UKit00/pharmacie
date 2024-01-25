@@ -1,0 +1,56 @@
+<link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+<div class="container">
+ <div class="box">
+    <h2 class="text-wrapper">Info de livraison</h2>
+
+    <!-- Formulaire de livraison -->
+    <form class="delivery-form">
+      <!-- Nom du fournisseur -->
+      <div class="form-group">
+        <label for="supplierName"></label>
+        <input type="text" id="supplierName" placeholder="Nom du fournisseur">
+      </div>
+
+      <!-- Adresse -->
+      <div class="form-group">
+        <label for="address"></label>
+        <input type="text" id="address" placeholder="Adresse">
+      </div>
+
+      <!-- Code zip -->
+      <div class="form-group">
+        <label for="zipCode"></label>
+        <input type="text" id="zipCode" placeholder="Code zip">
+      </div>
+
+      <!-- Téléphone -->
+      <div class="form-group">
+        <label for="phone"></label>
+        <input type="tel" id="phone" placeholder="Téléphone">
+      </div>
+
+      <!-- Email -->
+      <div class="form-group">
+        <label for="email"></label>
+        <input type="email" id="email" placeholder="Email">
+      </div>
+
+      <!-- Pays / ville / région -->
+      <div class="form-group">
+        <label for="country"></label>
+        <select id="country">
+          <option value="">Pays / ville / région</option>
+        </select>
+      </div>
+    </form>
+
+    <!-- Navigation buttons -->
+    <div class="form-navigation">
+      <button class="button-back" (click)="goToCommande()"><i class="ri-arrow-left-double-line"></i>Précédent</button>
+      <button class="button-confirm" (click)="goToCarte()" >Confirmer » </button>
+    </div>
+  </div>
+</div>

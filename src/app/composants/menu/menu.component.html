@@ -1,0 +1,80 @@
+
+<div id="header">
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="assets/iph.png" width="100px">
+  <p>
+  <!--<img src="assets/ph.png " height="15px" width="200px">-->
+  </p>
+</div>
+<div class="element">
+  <div class="bt">
+    <button class="bt " type="button" [routerLink]="['/test']" > &nbsp;&nbsp;<i class="fa-solid fa-chart-pie"></i> &nbsp;Test</button>
+  </div>
+  <div class="accordion accordion-flush" id="accordionFlushExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+          <img src="assets/st.png" height="15px" > &nbsp;&nbsp; Stock
+        </button>
+      </h2>
+      <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        <div class="d-grid">
+          <button [routerLink]="['/produit']" class="bt " type="button" ><i class="fas fa-char-line"></i> &nbsp;Produit</button>
+          <button class="bt " type="button" [routerLink]="['/suivi']" ><i class="fas fa-char-line"></i> &nbsp;Suivi</button>
+          <button class="bt " type="button" [routerLink]="['/commande']" ><i class="fas fa-char-line"></i> &nbsp;Commande</button>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+          <img src="assets/ven.png" height="15px"> &nbsp;&nbsp; Vente
+        </button>
+      </h2>
+      <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        <div class="d-grid">
+          <button [routerLink]="['/vente']" class="bt " type="button" ><i class="fas fa-char-line"></i> &nbsp;Caisse</button>
+          <button class="bt " type="button" [routerLink]="['/rapportVente']" ><i class="fas fa-char-line"></i> &nbsp;Facture</button>
+        </div>    </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+          <i class="fas fa-users"></i>&nbsp; Gestion de client
+        </button>
+      </h2>
+      <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        <div class="d-grid">
+          <button [routerLink]="['/client']" class="bt " type="button" ><i class="fas fa-char-line"></i> &nbsp;Client</button>
+          <button class="bt " type="button" [routerLink]="['/rapport']" ><i class="fas fa-char-line"></i> &nbsp;Rapport</button>
+        </div>    </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+          <i class="fas fa-user"></i>&nbsp; Gestion du personnel
+        </button>
+      </h2>
+      <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        <div class="d-grid">
+          <button [routerLink]="['/personnel']" class="bt " type="button" ><i class="fas fa-char-line"></i> &nbsp;Personnel</button>
+          <button class="bt " type="button" [routerLink]="['/rapport personnel']" ><i class="fas fa-char-line"></i> &nbsp;Rapport</button>
+        </div>    </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+          <i class="fa-solid fa-gear"></i>&nbsp;&nbsp;&nbsp;Systems
+        </button>
+      </h2>
+      <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        <div class="d-grid">
+          <button class="bt " type="button" [routerLink]="['/general']" ><i class="fas fa-char-line"></i> &nbsp;General</button>
+          <button class="bt " type="button" [routerLink]="['/a propos']" ><i class="fas fa-char-line"></i> &nbsp;A propos</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+

@@ -1,0 +1,27 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Nom</th>
+      <th>Quantite</th>
+      <th>Actions</th> <!-- Ajout de la colonne Actions -->
+    </tr>
+  </thead>
+  <tbody *ngFor="let Produit of ProduitFiltres; let i = index">
+    <tr>
+      <td>{{ Produit.id }}</td>
+      <td>{{ Produit.nom }}</td>
+      <td>{{ Produit.quantite }}</td>
+      <td>
+        <!-- Bouton Modifier -->
+        <button type="button" class="btn btn-primary" (click)="modifierProduit(Produit)">
+          Modifier
+        </button>
+        <!-- Bouton Supprimer -->
+        <button type="button" class="btn btn-danger" (click)="supprimerProduit(Produit.id)">
+          Supprimer
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>

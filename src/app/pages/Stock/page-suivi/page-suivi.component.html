@@ -1,0 +1,34 @@
+<div class="col-md-12">
+  <div class="col-md-12 text-end">
+    <button type="button" class="btn btn-success"  >
+      <i class="fas fa-cloud-upload-alt"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Au dessus du seuil
+    </button>
+    &nbsp;&nbsp;
+    <button type="button" class="btn btn-danger" >
+      <i class="fas fa-cloud-download-alt"></i>&nbsp;&nbsp;&nbsp; En dessous du seuil
+    </button>
+    <pre></pre>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </div>
+</div>
+<table class="table">
+  <thead>
+  <tr>
+    <th>Id</th>
+    <th></th>
+    <th>Nom</th>
+    <th>Quantite</th>
+    <th>Seuil</th>
+  </tr>
+  </thead>
+
+  <tbody *ngFor="let produit of produitsFiltres; let i = index">
+  <tr>
+    <td>{{ produit.id }}</td>
+<td></td>
+    <td>{{ produit.nom }}</td>
+    <td>{{ produit.quantite }}</td>
+    <td>{{ produit.seuil }}</td>
+  </tr>
+  </tbody>
+</table>

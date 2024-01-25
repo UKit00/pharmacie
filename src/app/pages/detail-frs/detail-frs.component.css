@@ -1,0 +1,8 @@
+/* Ajoutez des styles pour les couleurs de texte */
+.button-warning {
+  color: #FFA500; /* Couleur pour le bouton "Au dessus" */
+}
+
+.button-success {
+  color: #008000; /* Couleur pour le bouton "En dessous" */
+}

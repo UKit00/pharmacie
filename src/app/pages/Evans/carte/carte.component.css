@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz@8..144&display=swap');
+.container {
+  
+  font-family: Arial, sans-serif;
+  width: 638px;
+  top: 10%;
+  margin-top: -25px;
+  position: fixed;
+  margin-left: 400px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Ombre légère pour le conteneur */
+  
+  
+}
+
+
+.title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: left;
+  color: #333;
+}
+
+.card-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.card-option {
+  display: flex;
+  align-items: center;
+  
+}
+
+.card-option input[type="radio"] {
+  margin-right: 10px; /* Espace entre le bouton radio et l'image */
+}
+
+.card-option img {
+  height: 30px; /* Hauteur des logos des cartes */
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  
+}
+
+.input-field label {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 5px;
+  
+}
+
+.input-field input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: rgba(217, 217, 217, 0.6);
+}
+
+.half-width {
+  width: calc(50% - 10px);
+  /* Ajuste la largeur pour tenir compte de la marge */
+}
+
+.half-width .cvv1{
+  margin-top: -20px;
+  position: fixed;
+  display: flex;
+}
+
+.input-field.half-width:first-of-type {
+  margin-right: 20px; /* Espace entre les champs de saisie */
+}
+
+.form-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.container .form-navigation .button-back{
+  /* Vos styles de bouton existants ici */
+  background-color: #007bff; 
+  color: white;
+  border: none;
+  padding: 12px 0 0 20px;
+  margin-left: 5px;
+  font-size: 13px;
+  font-family: 'Roboto Serif', serif;
+  width: 100px;
+  display: flex;
+  height: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.container .form-navigation .button-back i{
+  margin-left: -20px;
+  margin-top: -1px;
+  font-size: 18px;
+  position: fixed;
+  display: flex;
+}
+
+
+
+.container .form-navigation .button-back:hover {
+  background-color: #0056b3;
+}
+
+.container .form-navigation .button-confirm {
+  /* Vos styles de bouton existants ici */
+  background-color: #FBB03B; 
+  color: white;
+  border: none;
+  padding: 0 2px 0 0;
+  margin-left: 5px;
+  font-size: 13px;
+  font-family: 'Roboto Serif', serif;
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.container .form-navigation .button-confirm i{
+  margin-left: 82px;
+  font-size: 18px;
+  margin-top: -1px;
+  display: flex;
+  position: fixed;
+}
+
+
+.container .form-navigation .button-confirm:hover {
+  background-color: rgb(160, 102, 8);
+}
+
+/* Style spécifique pour les demi-largeurs input pour les mettre côte à côte */
+.input-field.half-width {
+  display: inline-block;
+  width: calc(50% - 20px); /* Réduit la largeur pour tenir compte des marges */
+}
+
+/* Clear floats après les inputs demi-largeur */
+.input-field::after {
+  content: "";
+  display: table;
+  clear: both;
+}

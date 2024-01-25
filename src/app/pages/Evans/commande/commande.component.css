@@ -1,0 +1,48 @@
+.order-container {
+  font-family: Arial, sans-serif;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.order-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.order-table thead {
+  background-color: #f8f8f8;
+}
+
+.order-table th, .order-table td {
+  text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+.order-table img {
+  width: 20px; /* Adjust size as needed */
+  height: auto;
+  margin-right: 5px;
+}
+
+.order-total {
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: right;
+}
+
+.next-button {
+  background-color: #f90;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-size: 16px;
+  float: right;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.next-button:hover {
+  background-color: #e80;
+}

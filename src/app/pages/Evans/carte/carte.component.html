@@ -1,0 +1,47 @@
+<link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+<div class="container">
+  <div class="box">
+    <div class="title">Sélectionner votre type de carte</div>
+    <div class="card-options">
+      <label class="card-option">
+        <input type="radio" name="card-type" />
+        <img src="./assets/Vector.png" alt="Visa" />
+      </label>
+      <label class="card-option">
+        <input type="radio" name="card-type" />
+        <img src="./assets/apple.png" alt="Apple Pay" />
+      </label>
+      <label class="card-option">
+        <input type="radio" name="card-type" />
+        <img src="./assets/Rectangle 127.png" alt="MasterCard" />
+      </label>
+      <label class="card-option">
+        <input type="radio" name="card-type" />
+        <img src="./assets/Rectangle 128.png" alt="PayPal" />
+      </label>
+    </div>
+    <div class="input-field">
+      <label for="card-number">Numéro de carte</label>
+      <input id="card-number" type="text" />
+    </div>
+    <div class="input-field">
+      <label for="card-name">Nom de la carte</label>
+      <input id="card-name" type="text" />
+    </div>
+    <div class="input-field half-width">
+      <label for="expiry-date">Date d’expiration</label>
+      <input id="expiry-date" type="text" />
+    </div>
+    <div class="input-field half-width">
+      <label for="cvv" class="cvv1">CVV</label>
+      <input id="cvv" type="text" />
+    </div>
+    <div class="form-navigation">
+      <button class="button-back"(click)="goToLivraison()"><i class="ri-arrow-left-double-line"></i>Précédent</button>
+      <button class="button-confirm"(click)="goToConfirmation()"><i class="ri-arrow-right-double-line"></i>Confirmer </button>
+    </div>
+  </div>
+</div>
