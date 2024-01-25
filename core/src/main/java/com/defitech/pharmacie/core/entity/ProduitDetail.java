@@ -22,4 +22,15 @@ public class ProduitDetail {
     @ManyToOne
     @JsonIgnore
     private Facture facture;
+
+    public ProduitDetail(String nomProduit, int qte, double prixUnitaire, double totalPartiel) {
+        this.nomProduit = nomProduit;
+        this.qte = qte;
+        this.prixUnitaire = prixUnitaire;
+        this.totalPartiel = totalPartiel;
+    }
+
+    public ProduitDetail() {
+
+    }
 }
