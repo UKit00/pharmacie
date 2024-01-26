@@ -23,5 +23,7 @@ public class Produit {
 
     private int qte;
 
+    private int seuil;
+
     private double prixUnitaire;
 }
