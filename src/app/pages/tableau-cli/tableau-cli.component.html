@@ -1,0 +1,46 @@
+<div class="tableall">
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th></th> <!-- Colonne pour les cases à cocher -->
+          <th>Nom client</th>
+          <th>Adresse</th>
+          <th>Email</th>
+          <th>Total achat</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let client of clients" (click)="selectClient(client)" [class.selected]="isSelected(client)">
+          <td>
+            <input type="checkbox" (click)="$event.stopPropagation()" [(ngModel)]="client.selected">
+          </td>
+          <td>{{ client.nom }}</td>
+          <td>{{ client.adresse }}</td>
+          <td>{{ client.email }}</td>
+          <td>{{ client.totalAchat | currency:'XAF':'symbol-narrow' }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="articles-container">
+    <table>
+      <caption>Article Vendue</caption>
+      <thead>
+        <tr>
+          <th>Article</th>
+          <th>Information ventes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Utilisez *ngFor pour itérer sur les articles dans votre composant Angular -->
+        <tr *ngFor="let article of articles">
+          <td>{{ article.nom }}</td>
+          <td>Quantité : {{ article.quantite }} <br>
+            Prix : {{ article.prix | currency:'XAF':'symbol-narrow' }} <br>
+            Total : {{ article.totalAchat | currency:'XAF':'symbol-narrow' }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

@@ -1,0 +1,57 @@
+.calendar-container {
+  padding-left: 70px;
+  padding-bottom: 70px;
+  padding-top: 30px;
+  position: center;
+}
+
+/* CSS pour personnaliser le datepicker Angular Material */
+
+/* Modifier la couleur de fond du champ de saisie */
+.calendar-container .mat-form-field {
+  background-color: #f5f5f5;
+  /* Couleur de fond claire */
+}
+
+/* Modifier la couleur du texte dans le champ de saisie */
+.calendar-container input.mat-input-element {
+  color: #333333;
+  /* Couleur de texte foncée */
+}
+
+/* Modifier la couleur de fond du datepicker */
+.mat-datepicker-content {
+  background-color: #e0e0e0;
+  /* Couleur de fond légèrement grise */
+}
+
+/* Modifier la couleur de fond des dates sélectionnées */
+.mat-calendar-body-selected {
+  background-color: #1976d2;
+  /* Couleur bleue */
+}
+
+/* Modifier la couleur de texte des dates sélectionnées */
+.mat-calendar-body-selected .mat-calendar-body-cell-content {
+  color: white;
+}
+
+/* Modifier la couleur de fond des dates actives (survol) */
+.mat-calendar-body-active .mat-calendar-body-cell-content {
+  background-color: #1565c0;
+  /* Couleur bleue plus foncée */
+}
+
+/* Modifier la couleur du bouton pour choisir la date */
+.mat-datepicker-toggle button {
+  background-color: #1976d2;
+  /* Couleur bleue */
+  color: white;
+}
+
+/* Modifier la couleur de l'icône du bouton */
+.mat-datepicker-toggle .mat-icon {
+  color: white;
+}
+
+/* Ajoutez d'autres styles selon vos besoins */

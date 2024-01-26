@@ -1,0 +1,63 @@
+/* Styles pour le header - Assurez-vous que app-header-component a ses propres styles */
+header {
+  /* Couleur de fond de l'entête */
+  color: white;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+/* Conteneur principal avec le sidebar et le contenu principal */
+.main-container {
+  display: flex;
+  /* Hauteur complète */
+}
+
+/* Sidebar styles */
+nav {
+  background-color: #d35400;
+  /* Couleur de fond du sidebar */
+  width: 200px;
+  /* Largeur du sidebar */
+  box-shadow: 4px 0 5px -2px rgba(0, 0, 0, 0);
+}
+
+/* Styles de lien dans le sidebar */
+nav a {
+  color: white;
+  padding: 0.5rem 1rem;
+  display: block;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #732D91;
+  /* Couleur de fond au survol des liens */
+}
+
+/* Contenu principal à côté du sidebar */
+main {
+  flex-grow: 2;
+  background-color: #F4F4F4;
+}
+
+
+
+/* Style pour la liste des articles vendus */
+
+
+
+/* Media queries pour la responsivité */
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: flex;
+  }
+
+  nav {
+    width: 30%;
+    /* Sidebar en pleine largeur sur mobile */
+  }
+
+  main {
+    padding: 0.5rem;
+  }
+}

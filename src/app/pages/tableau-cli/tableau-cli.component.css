@@ -1,0 +1,100 @@
+div {
+  display: flex;
+}
+
+.table-container {
+  width: 92%;
+  overflow-x: auto;
+  padding-left: 12px;
+  display: flex;
+  /* Pour le défilement horizontal si nécessaire */
+}
+
+.table-container table {
+  width: 90%;
+  border-collapse: collapse;
+  /* Pour un design plus serré et net */
+}
+
+.table-container th,
+.table-container td {
+  text-align: center;
+  padding: 2px;
+  border-bottom: 1px solid #ddd;
+  /* Séparateurs de ligne */
+}
+
+.table-container th {
+  background-color: #CA2828;
+  /* Couleur de fond pour les en-têtes */
+  color: whitesmoke;
+  /* Couleur du texte pour les en-têtes */
+}
+
+.table-container td {
+  background-color: #fff;
+  /* Couleur de fond pour les cellules */
+  color: #333;
+  /* Couleur du texte pour les cellules */
+}
+
+.table-container tr.selected {
+  background-color: #ba3e33;
+  /* Une couleur de fond pour indiquer la sélection */
+}
+
+.table-container input[type="checkbox"] {
+  margin-left: 10px;
+  /* Espace autour de la case à cocher */
+}
+
+
+
+/* Ajoutez des styles pour la responsivité ou des états spécifiques si nécessaire */
+@media (max-width: 768px) {
+
+  th,
+  td {
+    padding: 4px;
+    /* Réduire le padding pour les écrans plus petits */
+  }
+}
+
+
+.articles-container {
+  margin-top: 5px;
+  margin-left: 2px;
+  flex-grow: 2px;
+}
+
+.articles-container table {
+  width: 100%;
+  margin-top: 5px;
+}
+
+.articles-container th,
+.articles-container caption {
+  text-align: center;
+  padding: 2px;
+  /* Réduire le padding pour compacter */
+  border-bottom: 1px #ddd;
+}
+
+.articles-container td {
+  text-align: left;
+  padding: 10px;
+  /* Réduire le padding pour compacter */
+  border-bottom: 1px #ddd;
+}
+
+.articles-container th {
+  background-color: #f2f2f2;
+}
+
+.articles-container td {
+  background-color: #fff;
+  font-size: 11px;
+  /* Réduire la taille de la police */
+}
+
+/* Ajoutez des styles supplémentaires selon votre conception */

@@ -14,6 +14,7 @@ import { RapportpersonnelComponent } from './pages/Personnel/rapportpersonnel/ra
 import { PagePersonnelComponent } from './pages/Personnel/page-personnel/page-personnel.component';
 import { ProduitpageComponent } from './produitpage/produitpage.component';
 import { CommandeComponent } from './pages/Evans/commande/commande.component';
+import { StatsCliComponent } from './pages/stats-cli/stats-cli.component';
 
 
 export const routes: Routes = [
@@ -52,7 +53,7 @@ export const routes: Routes = [
           },
           {
             path: 'rapportVente',
-            component : PageRapportVenteComponent
+            component : StatsCliComponent
           },
           {
             path: 'a propos',
