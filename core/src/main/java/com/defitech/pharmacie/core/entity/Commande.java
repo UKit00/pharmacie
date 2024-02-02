@@ -1,5 +1,6 @@
 package com.defitech.pharmacie.core.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.Data;
 import org.hibernate.annotations.DynamicInsert;
@@ -19,6 +20,7 @@ public class Commande {
     private double total;
     private double prixUnitaire;
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "fournisseur_id")
+   @JoinColumn(name = "fournisseur_id")
     private Fournisseur fournisseur;
+    
 }
