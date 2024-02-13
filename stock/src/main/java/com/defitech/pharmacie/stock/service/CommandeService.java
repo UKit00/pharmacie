@@ -1,6 +1,7 @@
 package com.defitech.pharmacie.stock.service;
 
 import com.defitech.pharmacie.core.entity.Commande;
+import com.defitech.pharmacie.core.entity.Fournisseur;
 import com.defitech.pharmacie.stock.repository.CommandeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -12,14 +13,19 @@ import java.util.Optional;
 public class CommandeService implements ICommandeService {
 
     private final CommandeRepository commandeRepository;
+    private FournisseurService fournisseurService;
 
-    @Autowired
-    public CommandeService(CommandeRepository commandeRepository) {
+    public CommandeService(CommandeRepository commandeRepository, FournisseurService fournisseurService) {
         this.commandeRepository = commandeRepository;
+        this.fournisseurService = fournisseurService;
     }
+
+
 
     @Override
     public Commande ajouter(Commande commande) {
+        Fournisseur fournisseur = this.fournisseurService.lire(commande.getFournisseur());
+        commande.setFournisseur(fournisseur);
         return commandeRepository.save(commande);
     }
 
@@ -28,6 +34,7 @@ public class CommandeService implements ICommandeService {
         int id = commande.getId();
         Optional<Commande> optCommande = commandeRepository.findById(id);
         return optCommande.map(cmd -> {
+
             cmd.setNomProduit(commande.getNomProduit());
             cmd.setPrix(commande.getPrix());
             cmd.setQuantite(commande.getQuantite());

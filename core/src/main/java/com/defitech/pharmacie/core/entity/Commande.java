@@ -2,8 +2,12 @@ package com.defitech.pharmacie.core.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import org.hibernate.annotations.Cascade;
 import org.hibernate.annotations.DynamicInsert;
 import org.hibernate.annotations.DynamicUpdate;
+
+import static jakarta.persistence.CascadeType.MERGE;
+import static jakarta.persistence.CascadeType.PERSIST;
 
 @Entity
 @Data
@@ -18,7 +22,7 @@ public class Commande {
     private int quantite;
     private double total;
     private double prixUnitaire;
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(cascade = {PERSIST,MERGE})
     @JoinColumn(name = "fournisseur_id")
     private Fournisseur fournisseur;
 }
