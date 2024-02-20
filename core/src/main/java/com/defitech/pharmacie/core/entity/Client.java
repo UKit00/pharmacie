@@ -1,7 +1,6 @@
 package com.defitech.pharmacie.core.entity;
 
 import jakarta.persistence.*;
-import jakarta.persistence.Id;
 import lombok.Data;
 import org.hibernate.annotations.DynamicInsert;
 import org.hibernate.annotations.DynamicUpdate;

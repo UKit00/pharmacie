@@ -24,9 +24,10 @@ public class Fournisseur {
     private String adress;
 
     private String numero;
-    @OneToMany(mappedBy = "fournisseur", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "fournisseur")
     @JsonIgnore
     private List<Commande> commandes;
 
 
 }
+
