@@ -11,7 +11,6 @@ import java.util.Optional;
 
 @Service
 public class CommandeService implements ICommandeService {
-
     private final CommandeRepository commandeRepository;
     private FournisseurService fournisseurService;
 

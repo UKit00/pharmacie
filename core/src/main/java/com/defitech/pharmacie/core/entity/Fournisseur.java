@@ -2,6 +2,7 @@ package com.defitech.pharmacie.core.entity;
 
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.Data;
 import org.hibernate.annotations.DynamicInsert;
@@ -24,6 +25,7 @@ public class Fournisseur {
 
     private String numero;
     @OneToMany(mappedBy = "fournisseur")
+    @JsonIgnore
     private List<Commande> commandes;
 
 

@@ -1,5 +1,6 @@
 package com.defitech.pharmacie.core.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.Data;
 import org.hibernate.annotations.Cascade;
@@ -24,5 +25,6 @@ public class Commande {
     private double prixUnitaire;
     @ManyToOne(cascade = {PERSIST,MERGE})
     @JoinColumn(name = "fournisseur_id")
+
     private Fournisseur fournisseur;
 }
