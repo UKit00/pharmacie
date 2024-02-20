@@ -16,8 +16,14 @@ public class FournisseurService implements IFournisseurService {
 
     @Override
     public Fournisseur ajouter(Fournisseur f) {
+        Fournisseur fournisseurbd = this.fournisseurRepository.findByNomFournisseur(f.getNomFournisseur());
+        if (fournisseurbd == null) {
+            fournisseurbd = this.fournisseurRepository.save(f);
+        }
 
-        return fournisseurRepository.save(f);
+
+        return fournisseurbd;
+
     }
 
     @Override
@@ -45,5 +51,14 @@ public class FournisseurService implements IFournisseurService {
     public String supprimer(int id) {
         fournisseurRepository.deleteById(id);
         return "Bien supprimé";
+    }
+
+    public Fournisseur lire(Fournisseur fournisseurC) {
+        Fournisseur fournisseurbd = this.fournisseurRepository.findByNomFournisseur(fournisseurC.getNomFournisseur());
+        if (fournisseurbd == null) {
+            fournisseurbd = this.fournisseurRepository.save(fournisseurC);
+
+        }
+        return fournisseurbd;
     }
 }

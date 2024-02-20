@@ -24,7 +24,7 @@ public class CommandeRessource {
     }
 
     @GetMapping("/commande")
-    public List<Commande> getAllCommandes() {
+    public @ResponseBody List<Commande> getAllCommandes() {
         return commandeService.voirTout();
     }
 
