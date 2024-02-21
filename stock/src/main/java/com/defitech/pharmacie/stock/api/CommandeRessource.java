@@ -38,8 +38,9 @@ public class CommandeRessource {
         return commandeService.supprimer(id);
     }
 
-    @PutMapping("/commande")
-    public Commande updateCommande(@RequestBody Commande commande) {
-        return commandeService.modifier(commande);
+    @PutMapping("/commande/{id}")
+    public Commande updateCommande(@PathVariable int id ,@RequestBody Commande commande) {
+        return commandeService.modifier( id,commande );
     }
+
 }
