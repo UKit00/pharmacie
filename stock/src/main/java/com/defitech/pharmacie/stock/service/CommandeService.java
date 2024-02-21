@@ -3,7 +3,7 @@ package com.defitech.pharmacie.stock.service;
 import com.defitech.pharmacie.core.entity.Commande;
 import com.defitech.pharmacie.core.entity.Fournisseur;
 import com.defitech.pharmacie.stock.repository.CommandeRepository;
-import org.springframework.beans.factory.annotation.Autowired;
+import jakarta.persistence.EntityNotFoundException;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -28,19 +28,21 @@ public class CommandeService implements ICommandeService {
         return commandeRepository.save(commande);
     }
 
+
     @Override
-    public Commande modifier(Commande commande) {
-        int id = commande.getId();
-        Optional<Commande> optCommande = commandeRepository.findById(id);
-        return optCommande.map(cmd -> {
+    public Commande modifier(int id, Commande commande) {
 
-            cmd.setNomProduit(commande.getNomProduit());
-            cmd.setPrix(commande.getPrix());
-            cmd.setQuantite(commande.getQuantite());
-            return commandeRepository.save(cmd);
-        }).orElseThrow(() -> new RuntimeException("Commande non trouvée avec l'ID : " + id));
-    }
 
+        Commande command = commandeRepository.findById(id)
+                .orElseThrow(() -> new EntityNotFoundException("Commande non trouver avec 'ID: " + id));
+
+        command.setNomProduit(commande.getNomProduit());
+        command.setTotal(commande.getTotal());
+        command.setPrix(commande.getPrix());
+
+        return commandeRepository.save(command);
+
+        }
     @Override
     public List<Commande> voirTout() {
         return commandeRepository.findAll();

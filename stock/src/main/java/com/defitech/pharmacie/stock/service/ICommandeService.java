@@ -10,7 +10,7 @@ public interface ICommandeService {
     Commande ajouter(Commande commande);
 
 
-    Commande modifier(Commande commande);
+
 
     List<Commande> voirTout();
 
@@ -19,5 +19,8 @@ public interface ICommandeService {
 
 
     String supprimer(int id);
+
+    Commande modifier(int id, Commande commande);
+
 
 }
