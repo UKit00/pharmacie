@@ -29,17 +29,6 @@ La maquette de conception de l'application est disponible sur Figma :
 
 [![Figma](https://img.shields.io/badge/Figma-View%20Maquette-orange)](lien_vers_la_maquette)
 
-## Diagrammes UML
-
-Voici les diagrammes UML pour l'architecture de l'application :
-
-### Diagramme de Classes
-
-![Diagramme de Classes](lien_vers_le_diagramme_de_classes)
-
-### Diagramme de Séquence
-
-![Diagramme de Séquence](lien_vers_le_diagramme_de_sequence)
 
 ## Aperçu de l'Interface Utilisateur
 
@@ -56,9 +45,3 @@ Voici quelques captures d'écran pour donner un aperçu de l'interface utilisate
 ### Caisse
 
 ![Caisse](lien_vers_capture_caisse)
-
-lien vers la documentation api caisse et prdouit:
-https://documenter.getpostman.com/view/32566190/2s9YypG44G
-
-lien vers la documentation api client:
-https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fraw.githubusercontent.com%2FUKit00%2Fpharmacie%2Fmain%2FdocAPi.docx&wdOrigin=BROWSELINK
