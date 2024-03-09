@@ -41,6 +41,22 @@ Voici les diagrammes UML pour l'architecture de l'application :
 
 ![Diagramme de Séquence](lien_vers_le_diagramme_de_sequence)
 
+## Aperçu de l'Interface Utilisateur
+
+Voici quelques captures d'écran pour donner un aperçu de l'interface utilisateur :
+
+### Page d'Accueil
+
+![Page d'Accueil](lien_vers_capture_accueil)
+
+### Gestion de Stock
+
+![Gestion de Stock](lien_vers_capture_stock)
+
+### Caisse
+
+![Caisse](lien_vers_capture_caisse)
+
 lien vers la documentation api caisse et prdouit:
 https://documenter.getpostman.com/view/32566190/2s9YypG44G
 
