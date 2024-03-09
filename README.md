@@ -1,3 +1,47 @@
+# Pharmacie Management System
+
+![Angular](https://img.shields.io/badge/Frontend-Angular-red.svg)
+![Spring Boot](https://img.shields.io/badge/Backend-Spring%20Boot-brightgreen.svg)
+![Microservices](https://img.shields.io/badge/Architecture-Microservices-blue.svg)
+
+Ce système de gestion de pharmacie est une application web développée en Angular pour le frontend et en Spring Boot pour le backend, utilisant une architecture microservices. Les différents microservices disponibles sont la Gestion de Stock, la Caisse, le Personnel, le Client et le Core.
+
+## Fonctionnalités
+
+- **Gestion de Stock**: Permet de gérer les produits disponibles en stock, d'ajouter de nouveaux produits, de mettre à jour les quantités, etc.
+- **Caisse**: Gère les transactions de vente, le paiement, l'historique des ventes, etc.
+- **Personnel**: Gère les informations sur le personnel de la pharmacie, les rôles, les autorisations, etc.
+- **Client**: Gère les informations sur les clients, les prescriptions, les informations de contact, etc.
+- **Core**: Contient les fonctionnalités communes utilisées par les autres microservices, telles que la gestion des utilisateurs, la sécurité, etc.
+
+## Documentation API
+
+La documentation détaillée de chaque microservice est disponible dans leurs répertoires respectifs :
+
+- [Documentation de la Gestion de Stock](lien_vers_la_documentation_stock)
+- [Documentation de la Caisse](lien_vers_la_documentation_caisse)
+- [Documentation du Personnel](lien_vers_la_documentation_personnel)
+- [Documentation du Client](lien_vers_la_documentation_client)
+- [Documentation du Core](lien_vers_la_documentation_core)
+
+## Maquette Figma
+
+La maquette de conception de l'application est disponible sur Figma :
+
+[![Figma](https://img.shields.io/badge/Figma-View%20Maquette-orange)](lien_vers_la_maquette)
+
+## Diagrammes UML
+
+Voici les diagrammes UML pour l'architecture de l'application :
+
+### Diagramme de Classes
+
+![Diagramme de Classes](lien_vers_le_diagramme_de_classes)
+
+### Diagramme de Séquence
+
+![Diagramme de Séquence](lien_vers_le_diagramme_de_sequence)
+
 lien vers la documentation api caisse et prdouit:
 https://documenter.getpostman.com/view/32566190/2s9YypG44G
 
