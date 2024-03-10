@@ -19,6 +19,7 @@ Ce système de gestion de pharmacie est une application web développée en Angu
 La documentation détaillée de chaque microservice est disponible dans leurs répertoires respectifs :
 
 - [Documentation de la Gestion de Stock](https://documenter.getpostman.com/view/32566190/2s9YypG44G)
+- [Documentation de la Gestion de Stock2](https://stdntpartners-my.sharepoint.com/:w:/g/personal/emmanuel_amela_studentambassadors_com/Ec3AtkDVtXBBr1CQ7LqLitkBaAuXDQnlg9RDvQ-46Ha4ow?e=qDjJeQ)
 - [Documentation de la Caisse](https://documenter.getpostman.com/view/32566190/2s9YypG44G)
 - [Documentation du Personnel](lien_vers_la_documentation_personnel)
 - [Documentation du Client](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fraw.githubusercontent.com%2FUKit00%2Fpharmacie%2Fmain%2FdocAPi.docx&wdOrigin=BROWSELINK)
